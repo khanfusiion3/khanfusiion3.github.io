@@ -1875,8 +1875,8 @@ function copyTempDouble(ptr) {
             if (e instanceof ExitStatus) {
               return;
             } else {
-              if (e && typeof e === 'object' && e.stack) Module.printErr('exception thrown: ' + [e, e.stack]);
-              throw e;
+              /* if (e && typeof e === 'object' && e.stack) Module.printErr('exception thrown: ' + [e, e.stack]);
+              throw e; */
             }
           }
           if (Module['postMainLoop']) Module['postMainLoop']();
